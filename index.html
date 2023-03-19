@@ -57,6 +57,55 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile nav start -->
+
+    <div class="container-fluid navbar2">
+      <div class="container">
+        <div class="second-head">
+          <div class="second-navbar">
+            <img src="images/Vector.png" alt="" />
+          </div>
+          <div class="second-navbar">
+            <div class="second-nav-icon">
+              <a
+                href=""
+                class="second-nav-icon-search"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+
+              <a onclick="toggleMenu()" class="toggleicon">
+                <span id="menutoggleIcon">&#x2630;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="menucontent">
+      <div class="second-nav" id="second-nav">
+        <ul>
+          <li class="crypto">
+            <a href="">Cryptocurrencies</a>
+            <hr />
+          </li>
+          <li class="exchange">
+            <a href="">Exchanges</a>
+            <hr />
+          </li>
+          <li class="community">
+            <a href="">Community</a>
+            <hr />
+          </li>
+          <li class="trades"><a href="">Trades</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- mobile nav end -->
+
     <!-- header section endd -->
 
     <!-- Cryptocurrency Prices section start -->
@@ -320,7 +369,7 @@
 
           <div class="col-lg-6 reason-fdiv">
             <h5>Reason to invest in Cryptocurrency in 2022</h5>
-            <div class="buy-bitcoin">
+            <div class="buy-bitcoin buy-bitcoin-1">
               <div class="buy-bitcoin-ficon">
                 <i class="fa-solid fa-check"></i>
               </div>
@@ -505,7 +554,7 @@
           <!-- footer third div end -->
 
           <!-- footer third div start -->
-          <div class="col-lg-2 footer-sdiv footer-fdiv">
+          <div class="col-lg-2 footer-sdiv footer-ftdiv">
             <h6>Socials</h6>
             <ul>
               <li><a href="">Facebook</a></li>
@@ -529,5 +578,17 @@
       <p>© 2021-2023 CoinIntention. All rights reserved.</p>
     </div>
     <!-- footer end section end -->
+
+    <script>
+      function toggleMenu() {
+        var content = document.getElementById("menucontent");
+
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
